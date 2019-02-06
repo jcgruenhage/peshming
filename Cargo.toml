@@ -3,14 +3,18 @@ name = "peshming"
 version = "0.1.0"
 authors = ["Jan Christian Grünhage <jan.christian@gruenhage.xyz>"]
 edition = "2018"
+description = "Pings configured hosts in a configurable intervals and exposes metrics for prometheus."
 
 [dependencies]
 prometheus = "0.5.0"
 oping = "0.3.3"
 toml = "0.4.10"
-serde_derive = "1.0.85"
 hyper = "0.12.23"
 lazy_static = "1.2.0"
 futures = "0.1.25"
 tokio = "0.1.15"
-env_logger = "0.6.0"
+clap = "2.32.0"
+fern = "0.5.7"
+log = "0.4.6"
+chrono = "0.4.6"
+serde = { version = "1.0.87", features = ["derive"] }
